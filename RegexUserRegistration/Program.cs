@@ -11,7 +11,7 @@ namespace RegexUserRegistration
             while (flag)
             {
                 Console.WriteLine("Welcome to the User Registration validation program");
-                Console.WriteLine("Enter the validation to be executed : \n 1. First Name \n 2. Last Name \n 3. Email ID \n 4. Mobile \n 5. Password Rule-1 \n 6. Password Rule-2 \n 7. Password Rule-3 \n 8. Exit");
+                Console.WriteLine("Enter the validation to be executed : \n 1. First Name \n 2. Last Name \n 3. Email ID \n 4. Mobile \n 5. Password Rule-1 \n 6. Password Rule-2 \n 7. Password Rule-3 \n 8. Password Rule-4 \n 9. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -37,6 +37,9 @@ namespace RegexUserRegistration
                         Console.WriteLine(validation.ValidatePassword3("naveEnv7"));
                         break;
                     case 8:
+                        Console.WriteLine(validation.ValidatePassword4("nave@En7"));
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }

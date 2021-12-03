@@ -14,6 +14,7 @@ namespace RegexUserRegistration
         public static string REGEX_PASSWORD1 = "^[a-z]{8,}";
         public static string REGEX_PASSWORD2 = "^[a-zA-Z]{8,}";
         public static string REGEX_PASSWORD3 = "^[a-zA-Z0-9]{8,}";
+        public static string REGEX_PASSWORD4 = "^[a-zA-Z0-9@!#$%^&*]{8,}";
         public bool ValidateFirstName(string firstName)
         {
             return Regex.IsMatch(firstName, REGEX_FIRST_NAME);
@@ -41,6 +42,10 @@ namespace RegexUserRegistration
         public bool ValidatePassword3(string password3)
         {
             return Regex.IsMatch(password3, REGEX_PASSWORD3);
+        }
+        public bool ValidatePassword4(string password4)
+        {
+            return Regex.IsMatch(password4, REGEX_PASSWORD4);
         }
     }
 }
